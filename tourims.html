@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Paradise - Travel & Tourism</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: url('hero.jpg') center/cover no-repeat; color: white; text-align: center; padding: 80px 20px; }
+    nav { background: #0077b6; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; max-width: 1200px; margin: auto; }
+    .destinations { display: flex; flex-wrap: wrap; gap: 20px; }
+    .card { flex: 1 1 calc(33% - 20px); background: #f8f9fa; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card h3 { margin: 15px; }
+    .card p { margin: 0 15px 15px; }
+    footer { background: #023e8a; color: white; text-align: center; padding: 20px; }
+    @media (max-width: 768px) { .card { flex: 1 1 100%; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explore Paradise</h1>
+    <p>Your dream destinations await</p>
+  </header>
+
+  <nav>
+    <a href="#destinations">Destinations</a>
+    <a href="#tours">Tours</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="destinations">
+    <h2>Top Destinations</h2>
+    <div class="destinations">
+      <div class="card">
+        <img src="beach.jpg" alt="Beach">
+        <h3>Tropical Beaches</h3>
+        <p>Relax on pristine sands with crystal-clear waters.</p>
+      </div>
+      <div class="card">
+        <img src="mountains.jpg" alt="Mountains">
+        <h3>Mountain Adventures</h3>
+        <p>Hike breathtaking trails and enjoy fresh air.</p>
+      </div>
+      <div class="card">
+        <img src="city.jpg" alt="City">
+        <h3>City Escapes</h3>
+        <p>Discover vibrant cultures and exciting nightlife.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tours">
+    <h2>Featured Tours</h2>
+    <p>From guided city walks to multi-day adventures, we have something for every traveler.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@exploreparadise.com | Phone: +123 456 789</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Explore Paradise. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
