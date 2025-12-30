@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tourism Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        .rating {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            font-size: 30px;
+            color: #ddd;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        .rating input:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: #ffcc00;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #21618c;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+    <p>Rate and Provide Feedback for Our Tourism Services</p>
+</header>
+
+<main>
+    <h2>Feedback Form</h2>
+    <p>We value your feedback! Please rate our services and share your thoughts.</p>
+    
+    <form action="#" method="post"> <!-- Change action to mailto or backend if needed -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="service">Service:</label>
+        <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="ngorongoro">Ngorongoro Crater Tour</option>
+            <option value="water">Water Resources</option>
+            <option value="general">General Services</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <label>Rating:</label>
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">&#9733;</label>
+        </div>
+        
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" placeholder="Share your experience..." required></textarea>
+        
+        <button type="submit">Submit Feedback</button>
+    </form>
+</main>
+
+<footer>
+    <p>Tourism Web Application &copy; 2025</p>
+</footer>
+
+</body>
+</html>
